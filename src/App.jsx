@@ -690,7 +690,7 @@ const MeetingModal = ({ mode, meeting, members, isAdmin, onClose, onSave, onDele
         </div>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
-        {mode === "edit" ? <SmBtn v="danger" onClick={() => ("Slet møde?") && onDelete(form.id)}>✕ Slet</SmBtn> : <div />}
+        {mode === "edit" ? <SmBtn v="danger" onClick={() => confirm("Slet møde?") && onDelete(form.id)}>✕ Slet</SmBtn> : <div />}
         <div style={{ display: "flex", gap: 10 }}>
           <SmBtn v="ghost" onClick={onClose}>Annullér</SmBtn>
           <Btn onClick={() => onSave(form)}>Gem møde</Btn>
@@ -1038,7 +1038,7 @@ export default function App() {
               {members.map(m => (
                 <MemberCard key={m.id} member={m} meetings={meetings} isAdmin={isAdmin}
                   onEdit={() => setMemberModal({ mode:"edit", member:m })}
-                  onDelete={() => (`Slet ${m.name}?`) && setMembers(p => p.filter(x => x.id !== m.id))} />
+                  onDelete={() => confirm(`Slet ${m.name}?`) && setMembers(p => p.filter(x => x.id !== m.id))} />
               ))}
             </div>
           </div>
