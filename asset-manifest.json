@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/boejland/RT30X6.git/static/css/main.e6c13ad2.css",
+    "main.js": "/boejland/RT30X6.git/static/js/main.6d458284.js",
+    "static/js/453.66a4288d.chunk.js": "/boejland/RT30X6.git/static/js/453.66a4288d.chunk.js",
+    "index.html": "/boejland/RT30X6.git/index.html",
+    "main.e6c13ad2.css.map": "/boejland/RT30X6.git/static/css/main.e6c13ad2.css.map",
+    "main.6d458284.js.map": "/boejland/RT30X6.git/static/js/main.6d458284.js.map",
+    "453.66a4288d.chunk.js.map": "/boejland/RT30X6.git/static/js/453.66a4288d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.6d458284.js"
+  ]
+}
